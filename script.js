@@ -270,7 +270,7 @@ const PROJECTS = [
   document.querySelectorAll(".reveal").forEach(function (el) { revealObserver.observe(el); });
 
   /* ---- Active nav link ---- */
-  var sections = ["about", "experience", "projects", "education", "contact"];
+  var sections = ["experience", "projects", "achievements", "education", "contact"];
   var links = document.querySelectorAll(".nav-link");
   var sectionObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
