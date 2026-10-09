@@ -5,22 +5,24 @@ const PROJECTS = [
     type: "Work",
     typeClass: "work",
     title: "SkyCarrier",
-    blurb: "Secure, remote drone storage with autonomous launch and recovery — designed to deploy drones on the move, even across rugged terrain.",
-    skills: ["Leadership", "Communication", "Mechanical Design", "Welding Design", "DFM", "DFA"],
+    blurb: "Main project I worked on at Teledyne FLIR Defense.",
+    image: "assets/skycarrier-hero.jpg",
+    imageAlt: "SkyCarrier autonomous drone launch and recovery system",
+    modalImage: "assets/skycarrier-hero.jpg",
+    modalImageAlt: "SkyCarrier autonomous drone launch and recovery system",
+    skills: ["Leadership", "Communication", "Mechanical Design", "Welding Design", "Design for Manufacturability", "DFA"],
     body: [
       {
-        heading: "What it is",
-        html: "<p>Main project worked on at Teledyne FLIR Defense. SkyCarrier provides secure, remote drone storage along with autonomous launch and recovery — on the move and in GPS-denied environments. Drones take off and land while the vehicle is in motion, even across rugged terrain with inclines exceeding 20&deg;. Onboard recharging and true free flight extend battery life and cut operational costs by reducing the need for constant monitoring, fuel, and extra personnel or vehicles.</p>"
+        heading: "What Is It?",
+        html: "<p>It provides secure, remote drone storage along with autonomous launch and recovery&mdash;on the move and in GPS-denied environments. Designed for high-speed operations, it enables drones to take off and land while in motion, even across rugged terrain with inclines exceeding 20&deg;. The system supports true free flight with onboard recharging and extended battery life, reducing operational costs by minimizing the need for constant monitoring, fuel, and additional personnel or vehicles. Check out the video below to see the product:</p>" +
+          "<div class=\"video-wrap\"><iframe src=\"https://www.youtube.com/embed/qa85Hi5ndg4\" title=\"SkyCarrier: The Future of Autonomous Drone Launch &amp; Recovery &mdash; Teledyne FLIR\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></div>"
       },
       {
-        heading: "My contributions",
-        html: "<ul>" +
-          "<li>Spearheaded the redesign of the power supply unit (PSU) duct cooling system with a multidisciplinary team; coordinated with third-party manufacturers on DFM and DFA improvements to meet manufacturing deadlines.</li>" +
-          "<li>Applied GD&amp;T and manufacturing knowledge to produce clear, buildable drawings; implemented design changes that eliminated fasteners and eased final assembly.</li>" +
-          "<li>Designed a TER cover that protected the system without inhibiting airflow — using louvres and laser cutting to keep the design simple to manufacture.</li>" +
-          "<li>Designed a cable carrier system and box trim products that eliminated cable snagging seen in early prototypes; several concepts carried into the final product.</li>" +
-          "<li>Designed the I/O panel in collaboration with electrical engineers to meet their requirements.</li>" +
-          "</ul>"
+        heading: "My Contributions",
+        html: "<p>Spearheaded a project to redesign the power supply unit (PSU) duct cooling system. Worked with a multidisciplinary team to ensure all criteria were met. Discussed with 3rd party manufacturers on design for manufacturability (DFM) and design for assembly (DFA) improvements, as well as ensured manufacturing deadlines were met. Used skills in GD&amp;T and manufacturing knowledge to ensure the drawings were clear. Implemented ideas that eliminated the need for fasteners and allowed for easier assembly in the final stages.</p>" +
+          "<p>Designed a TER cover that protected the system while not inhibiting airflow. Implemented ideas such as louvres and laser cutting to simplify design while also keeping the entire product simple to manufacture.</p>" +
+          "<p>Designed cable carrier system and box trim products that eliminated cable snagging in early prototypes. Some of these ideas were carried over and implemented into the final products.</p>" +
+          "<p>Designed the I/O panel in cooperation with electrical engineers to ensure their needs were met.</p>"
       }
     ]
   },
@@ -28,19 +30,31 @@ const PROJECTS = [
     type: "Personal",
     typeClass: "personal",
     title: "Automatic Drink Mixer",
-    blurb: "An Arduino-powered dispenser that mixes two drinks at the press of a cup — place it down, and the sensor does the rest.",
+    blurb: "Used 2 DC motor pumps controlled by an arduino and activated by a distance sensor to dispense a mixture of 2 liquids automatically.",
+    image: "assets/drink-1.jpg",
+    imageAlt: "Automatic drink mixer with two liquid containers and pumps",
     skills: ["Circuit Design", "3D Printing", "Arduino"],
     body: [
       {
-        heading: "What it is",
-        html: "<p>An automatic drink dispenser that mixes two separate liquids in differing quantities once a cup is placed in front of a distance sensor. Two DC motor pumps are controlled by an Arduino, which runs the motors for different durations depending on the drink selected.</p><ul>" +
-          "<li>Designed and 3D printed a frame to hold the cups and hardware.</li>" +
-          "<li>Designed the circuit, programmed the Arduino, and soldered the DC motor connections for consistent, reliable dispensing.</li>" +
-          "</ul>"
+        heading: "What Is It?",
+        html: "<figure class=\"modal-figure\"><img src=\"assets/drink-1.jpg\" alt=\"Automatic drink mixer with two liquid containers and pumps\" loading=\"lazy\"></figure>" +
+          "<ul>" +
+          "<li>An automatic drink dispenser that mixes two separate drinks of differing quantities once a cup is placed in front of a sensor.</li>" +
+          "<li>Designed and 3D printed a frame to hold all the cups and hardware.</li>" +
+          "</ul>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/drink-2.jpg\" alt=\"3D printed frame holding the drink mixer hardware\" loading=\"lazy\"></figure>" +
+          "<ul>" +
+          "<li>Designed a circuit and programmed an Arduino to run the motor for different times depending on what drink was wanted to be dispensed. The system was activated using a distance sensor and would start once a cup was placed beneath.</li>" +
+          "<li>Used soldering skills to connect DC motors to the rest of the system, ensuring a consistent connection.</li>" +
+          "</ul>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/solder.jpg\" alt=\"Soldered DC motor wiring for the drink mixer\" loading=\"lazy\"></figure>"
       },
       {
-        heading: "Why I made it",
-        html: "<p>A fun way to apply academic design and 3D printing skills while learning Arduino and circuit design — and a long-wanted gadget to have in the house.</p>"
+        heading: "Why Make It?",
+        html: "<ul>" +
+          "<li>Interesting way to use the design and 3D printing skills I have learned throughout my academic career, and integrate them with new skills in Arduino and circuit design.</li>" +
+          "<li>Project I have wanted to do for a long time, and really cool thing to have in the house.</li>" +
+          "</ul>"
       }
     ]
   },
@@ -48,20 +62,30 @@ const PROJECTS = [
     type: "Work",
     typeClass: "work",
     title: "Material Tool Cart",
-    blurb: "A 10,000 lb capacity HSS steel cart built to carry 40 ft insulated piping safely up and down the assembly line.",
+    blurb: "Designed a material cart designed to carry 10,000 lbs. of 40 ft. insulated piping up and down the assembly line.",
+    image: "assets/material-cart.png",
+    imageAlt: "Material tool cart engineering drawing",
     skills: ["DFM", "DFA", "Machining", "Welding Design", "Project Management"],
     body: [
       {
-        heading: "What it is",
-        html: "<p>A material tool cart made of HSS steel, designed to carry 10,000&nbsp;lbs of 40&nbsp;ft insulated piping safely. Built as part of a new production line serving oil companies using insulated piping.</p>"
+        heading: "What Is It?",
+        html: "<p>A material tool cart made out of HSS steel that was designed to carry 10,000 lbs. of 40ft. insulated piping safely.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/material-cart.png\" alt=\"Material tool cart engineering drawing\" loading=\"lazy\"></figure>"
       },
       {
-        heading: "My contributions",
+        heading: "Why Make It?",
+        html: "<p>Part of a new production line for oil companies using the insulated piping. Allowed me to lead a project and add value to operations.</p>"
+      },
+      {
+        heading: "My Contributions",
         html: "<ul>" +
-          "<li>Led the project, coordinating a team of in-house welders and machinists to keep the product easy to assemble and the drawings easy to read.</li>" +
-          "<li>Kept all parties aligned with clear, achievable deadlines.</li>" +
-          "<li>Designed the cart in SolidWorks using the weldment feature; ran FEA analysis to verify safe operation.</li>" +
-          "<li>Manufacturing completed in March 2025, and the cart is still in service today.</li>" +
+          "<li>Led a team of in-house welders and machinists to ensure the product was easy to assemble and drawings were understandable.</li>" +
+          "</ul>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/material-cart-2.png\" alt=\"Post-weld check drawing of the material tool cart\" loading=\"lazy\"></figure>" +
+          "<ul>" +
+          "<li>Ensured all parties were happy with the design and that the deadlines were clear and achievable.</li>" +
+          "<li>Designed in SOLIDWORKS using the weldment feature. FEA analysis was done to ensure the cart was safe for operation.</li>" +
+          "<li>The project finished manufacturing in March 2025 and is still working today.</li>" +
           "</ul>"
       }
     ]
@@ -70,17 +94,30 @@ const PROJECTS = [
     type: "Personal",
     typeClass: "personal",
     title: "3D Printing Projects",
-    blurb: "A collection of practical and playful prints — drone models, trophies, replacement parts, and shop essentials.",
-    skills: ["SolidWorks", "3D Printing"],
+    blurb: "Designed and 3D printed several projects for personal projects and work.",
+    image: "assets/mini-flir-drone.jpg",
+    imageAlt: "Mini 3D printed R70 FLIR drone model",
+    skills: ["SOLIDWORKS", "3D Printing"],
     body: [
       {
-        heading: "What I printed",
-        html: "<ul>" +
-          "<li><strong>Mini R70 FLIR Drone</strong> — worked with the previous co-op student to print a scaled-down R70 drone for customers as promotional pieces.</li>" +
-          "<li><strong>Blue Jays World Series Trophies</strong> — designed and printed trophies for the in-office score-guessing competition, mixing filaments for proper shine and logo colours.</li>" +
-          "<li><strong>Porsche Logo</strong> — a coworker lost the emblem off their Porsche, so I designed and printed a replacement.</li>" +
-          "<li><strong>Coffee Coaster</strong> — a simple printable coaster with the Teledyne FLIR logo, made after coffee stains kept appearing on desks.</li>" +
-          "</ul>"
+        heading: "Mini R70 FLIR Drone",
+        html: "<p>Worked with the previous co-op student to have a mini version of the R70 drone printed and distributed to customers for advertising purposes.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/mini-flir-drone.jpg\" alt=\"Mini 3D printed R70 FLIR drone model\" loading=\"lazy\"></figure>"
+      },
+      {
+        heading: "Blue Jays World Series Trophies",
+        html: "<p>Designed and printed Blue Jays trophies for the in-office score guessing competition. Mixed different types of filaments to get the proper shine effect and logo colours.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/jays-trophies.jpg\" alt=\"3D printed Blue Jays World Series trophies\" loading=\"lazy\"></figure>"
+      },
+      {
+        heading: "Porsche Logo",
+        html: "<p>My coworker lost the logo on their Porsche, so I designed a new one for them that they can put on their car.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/porsche-logo.jpg\" alt=\"3D printed replacement Porsche logo\" loading=\"lazy\"></figure>"
+      },
+      {
+        heading: "Coffee Coaster",
+        html: "<p>Felt bad that coffee stains were being left on everyone's desk, so I designed a simple 3D printable coffee coaster with the Teledyne FLIR logo for people in the office.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/coaster.jpg\" alt=\"3D printed coffee coaster with Teledyne FLIR logo\" loading=\"lazy\"></figure>"
       }
     ]
   },
@@ -88,23 +125,30 @@ const PROJECTS = [
     type: "School",
     typeClass: "school",
     title: "Robotic Blackjack Dealer",
-    blurb: "A first-year design project: a robot that deals cards, counts hands, and suggests optimal plays from the book.",
+    blurb: "Developed a robotic blackjack dealer capable of dealing and counting cards to determine a winner. Wrote the dealer code in C++, enabling it to perform complex tasks such as splitting, doubling, and suggesting optimal player actions based on the \u201cbook\u201d.",
+    image: "assets/blackjack-dealer.jpg",
+    imageAlt: "Robotic blackjack dealer",
     skills: ["C++", "Mechanical Design"],
     body: [
       {
-        heading: "What it is",
-        html: "<p>A robotic blackjack dealer that performs every action of a human dealer — and goes further by suggesting player actions. The dealer code is written in C++, enabling complex play like splitting, doubling, and recommending optimal moves based on the &ldquo;book&rdquo;.</p>"
+        heading: "What Is It?",
+        html: "<p>1st year design project aimed at creating a robotic blackjack dealer that could do all the actions of a normal human dealer and even give suggestions for player actions.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/blackjack-dealer.jpg\" alt=\"Robotic blackjack dealer\" loading=\"lazy\"></figure>"
       },
       {
-        heading: "How it works",
+        heading: "My Contributions",
         html: "<ul>" +
-          "<li>A flywheel sensor dispenses cards with a 98% success rate; the dealer deals itself a card, then drives across the table to deal player cards and offer hit, stand, split, and double.</li>" +
-          "<li>A colour sensor reads card numbers, and a distance sensor controls how far the dealer travels to each player.</li>" +
+          "<li>Used a flywheel sensor to dispense cards with a 98% success rate. The dealer dealt one card to itself and then drove across the table to deal the player cards and ask for the options of hit, stand, split, and double. Integrated the \u201cbook\u201d into the dealer code, allowing the dealer to give the player a suggestion on the best move in the current situation.</li>" +
+          "<li>Used a colour sensor to determine the numbers on each card dealt, and used a distance sensor to control how far the dealer drove to the player.</li>" +
           "</ul>"
       },
       {
-        heading: "Why I made it",
-        html: "<p>A challenging problem that pushed my design skills — and was fun to build. One improvement for next time: don't let the player see the next card.</p>"
+        heading: "Why Make It?",
+        html: "<ul>" +
+          "<li>Despite being an academic project, this robot was a challenging problem that pushed my design skills and was fun to make.</li>" +
+          "<li>Could improve it by not allowing the player to see the next card.</li>" +
+          "</ul>" +
+          "<p><em>Note: the original page included a demo video, but the video file did not transfer over, so it is not embedded here.</em></p>"
       }
     ]
   },
@@ -112,19 +156,21 @@ const PROJECTS = [
     type: "Work",
     typeClass: "work",
     title: "Helical Cutterhead",
-    blurb: "Custom helical cutterheads for planer machines — modeled in SolidWorks and manufactured for a cleaner, quieter cut.",
-    skills: ["SolidWorks", "DFM", "DFA"],
+    blurb: "Designed and manufactured custom helical cutterheads for planer machines. Used SOLIDWORKS skills to develop a 3D model and then transitioned that model into manufacturing drawings.",
+    image: "assets/helical-cutterhead.png",
+    imageAlt: "Helical cutterhead 3D model and drawings",
+    skills: ["SOLIDWORKS", "DFM", "DFA"],
     body: [
       {
-        heading: "What it is",
-        html: "<p>A product for a wood planer that delivers a cleaner and quieter cut than conventional cutterheads.</p>"
+        heading: "What Is It?",
+        html: "<p>A product designed for a wood planer that delivers a cleaner and quieter cut.</p>" +
+          "<figure class=\"modal-figure\"><img src=\"assets/helical-cutterhead.png\" alt=\"Helical cutterhead 3D model and drawings\" loading=\"lazy\"></figure>"
       },
       {
-        heading: "My contributions",
+        heading: "My Contributions",
         html: "<ul>" +
-          "<li>Used SolidWorks to develop the 3D model, then translated it into manufacturing drawings.</li>" +
-          "<li>Worked with manufacturers to ensure the design was manufacturable and the drawings were clear and readable.</li>" +
-          "<li>Created installation manuals and videos to increase customer satisfaction.</li>" +
+          "<li>Used design and drawing skills to make a 3D model of a helical cutterhead. Worked with manufacturers to ensure the design was manufacturable and drawings were clear and easy to read.</li>" +
+          "<li>Made installation manuals and videos for these products to increase customer satisfaction.</li>" +
           "</ul>"
       }
     ]
@@ -142,6 +188,7 @@ const PROJECTS = [
     card.className = "project-card reveal";
     card.setAttribute("aria-label", "Open details for " + p.title);
     card.innerHTML =
+      '<span class="project-thumb"><img src="' + p.image + '" alt="' + p.imageAlt + '" loading="lazy"></span>' +
       '<span class="project-type ' + p.typeClass + '">' + p.type + "</span>" +
       "<h3>" + p.title + "</h3>" +
       '<p class="project-blurb">' + p.blurb + "</p>" +
@@ -154,6 +201,7 @@ const PROJECTS = [
   var modal = document.getElementById("projectModal");
   var modalType = document.getElementById("modalType");
   var modalTitle = document.getElementById("modalTitle");
+  var modalHero = document.getElementById("modalHero");
   var modalTags = document.getElementById("modalTags");
   var modalBody = document.getElementById("modalBody");
   var lastFocused = null;
@@ -162,6 +210,14 @@ const PROJECTS = [
     var p = PROJECTS[i];
     modalType.textContent = p.type + " project";
     modalTitle.textContent = p.title;
+    if (p.modalImage) {
+      modalHero.src = p.modalImage;
+      modalHero.alt = p.modalImageAlt || "";
+      modalHero.style.display = "block";
+    } else {
+      modalHero.removeAttribute("src");
+      modalHero.style.display = "none";
+    }
     modalTags.innerHTML = p.skills.map(function (s) { return "<span>" + s + "</span>"; }).join("");
     modalBody.innerHTML = p.body.map(function (sec) {
       return "<h4>" + sec.heading + "</h4>" + sec.html;

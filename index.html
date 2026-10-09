@@ -29,8 +29,11 @@
   </nav>
 
   <header class="hero" id="home">
+    <div class="hero-cover" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-grid" aria-hidden="true"></div>
     <div class="container hero-content">
+      <img class="hero-photo reveal" src="assets/profile.png" alt="Jonathan Brackman" />
       <p class="hero-kicker reveal">Mechanical Engineering &mdash; University of Waterloo</p>
       <h1 class="hero-title reveal">Jonathan<br />Brackman<span class="accent">.</span></h1>
       <p class="hero-tagline reveal">
@@ -62,13 +65,8 @@
               Hello, I'm Jonathan Brackman, and I am currently attending the
               University of Waterloo for mechanical engineering. I have a passion
               for engineering and look to use my academics in the real world.
-            </p>
-            <p>
-              Across five co-op and internship terms &mdash; at Neuralink, Teledyne
-              FLIR, Steelhaus Technologies, Sheartak Tools, and Serinus Energy &mdash;
-              I've designed for manufacturability, led shop-floor teams, and shipped
-              hardware that works. Off the clock, I stay active and keep building:
-              3D printers, Arduino rigs, and robots that deal blackjack.
+              Take a look at my projects and what I've done so far in my
+              professional and academic career.
             </p>
           </div>
           <div class="about-skills reveal">
@@ -199,6 +197,7 @@
       <button class="modal-close" id="modalClose" aria-label="Close project details">&times;</button>
       <p class="modal-type" id="modalType"></p>
       <h3 class="modal-title" id="modalTitle"></h3>
+      <img class="modal-hero" id="modalHero" alt="" />
       <div class="tags modal-tags" id="modalTags"></div>
       <div class="modal-body" id="modalBody"></div>
     </div>
