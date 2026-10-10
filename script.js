@@ -147,8 +147,7 @@ const PROJECTS = [
         html: "<ul>" +
           "<li>Despite being an academic project, this robot was a challenging problem that pushed my design skills and was fun to make.</li>" +
           "<li>Could improve it by not allowing the player to see the next card.</li>" +
-          "</ul>" +
-          "<p><em>Note: the original page included a demo video, but the video file did not transfer over, so it is not embedded here.</em></p>"
+          "</ul>"
       }
     ]
   },
